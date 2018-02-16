@@ -12,6 +12,7 @@
 		CDF612FD2036666A009C4724 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDF612FB2036666A009C4724 /* Main.storyboard */; };
 		CDF612FF2036666A009C4724 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDF612FE2036666A009C4724 /* Assets.xcassets */; };
 		CDF613022036666A009C4724 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDF613002036666A009C4724 /* LaunchScreen.storyboard */; };
+		CDF6130A20366CFA009C4724 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF6130920366CFA009C4724 /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CDF612FE2036666A009C4724 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDF613012036666A009C4724 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDF613032036666A009C4724 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDF6130920366CFA009C4724 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				CDF612FE2036666A009C4724 /* Assets.xcassets */,
 				CDF613002036666A009C4724 /* LaunchScreen.storyboard */,
 				CDF613032036666A009C4724 /* Info.plist */,
+				CDF6130920366CFA009C4724 /* CustomTableViewCell.swift */,
 			);
 			path = FitPro;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDF6130A20366CFA009C4724 /* CustomTableViewCell.swift in Sources */,
 				CDF612FA2036666A009C4724 /* ViewController.swift in Sources */,
 				CDF612F82036666A009C4724 /* AppDelegate.swift in Sources */,
 			);
