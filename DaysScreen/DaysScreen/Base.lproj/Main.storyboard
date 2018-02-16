@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DaysScreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Lnf-qJ-IET">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCell" rowHeight="100" id="PyT-iy-8Q3" customClass="DaysScreenTableViewCell" customModule="DaysScreen" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PyT-iy-8Q3" id="011-jm-mt5">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="trX-ri-dIG">
+                                                    <rect key="frame" x="10" y="5" width="355" height="89.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Monday" translatesAutoresizingMaskIntoConstraints="NO" id="4GS-Ih-2ho">
+                                                            <rect key="frame" x="0.0" y="4" width="80" height="80"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="80" id="DbP-Lb-Iac"/>
+                                                                <constraint firstAttribute="height" constant="80" id="u4C-ZH-16R"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVL-I0-K5Q">
+                                                            <rect key="frame" x="88" y="8" width="259" height="73.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.75" alpha="0.79316131161971826" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="kVL-I0-K5Q" firstAttribute="leading" secondItem="4GS-Ih-2ho" secondAttribute="trailing" constant="8" id="LoR-Ee-hRK"/>
+                                                        <constraint firstAttribute="trailing" secondItem="kVL-I0-K5Q" secondAttribute="trailing" constant="8" id="SP7-20-2dp"/>
+                                                        <constraint firstItem="4GS-Ih-2ho" firstAttribute="centerY" secondItem="trX-ri-dIG" secondAttribute="centerY" id="gGD-qT-16d"/>
+                                                        <constraint firstAttribute="bottom" secondItem="kVL-I0-K5Q" secondAttribute="bottom" constant="8" id="orb-Uy-pUu"/>
+                                                        <constraint firstItem="4GS-Ih-2ho" firstAttribute="leading" secondItem="trX-ri-dIG" secondAttribute="leading" id="yTh-P5-kMV"/>
+                                                        <constraint firstItem="kVL-I0-K5Q" firstAttribute="top" secondItem="trX-ri-dIG" secondAttribute="top" constant="8" id="zmf-zS-Zrb"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="trX-ri-dIG" firstAttribute="top" secondItem="011-jm-mt5" secondAttribute="top" constant="5" id="ZXX-xX-6bR"/>
+                                                <constraint firstAttribute="bottom" secondItem="trX-ri-dIG" secondAttribute="bottom" constant="5" id="cf6-um-tFA"/>
+                                                <constraint firstAttribute="trailing" secondItem="trX-ri-dIG" secondAttribute="trailing" constant="10" id="hfc-PJ-bCU"/>
+                                                <constraint firstItem="trX-ri-dIG" firstAttribute="leading" secondItem="011-jm-mt5" secondAttribute="leading" constant="10" id="xva-ww-Ykj"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="CellView" destination="trX-ri-dIG" id="NcO-KJ-F00"/>
+                                            <outlet property="DayImage" destination="4GS-Ih-2ho" id="8rc-o6-x0N"/>
+                                            <outlet property="DayLabel" destination="kVL-I0-K5Q" id="ZwE-xC-b0m"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Lnf-qJ-IET" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2eW-BT-txh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lnf-qJ-IET" secondAttribute="trailing" id="8P5-B3-oXE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Lnf-qJ-IET" secondAttribute="bottom" id="jZa-Su-BvF"/>
+                            <constraint firstItem="Lnf-qJ-IET" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jkr-i5-KXG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Lnf-qJ-IET" id="04X-8g-Kma"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Monday" width="50" height="50"/>
+    </resources>
+</document>
