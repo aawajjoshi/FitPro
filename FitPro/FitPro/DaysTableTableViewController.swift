@@ -10,6 +10,8 @@ import UIKit
 
 class DaysTableTableViewController: UITableViewController {
 
+  
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,19 +39,29 @@ class DaysTableTableViewController: UITableViewController {
         return AppDelegate.daysCode.days.count
     }
 
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         
         // Configure the cell...
       
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Days_Code", for: indexPath)
-        cell.textLabel?.text=AppDelegate.daysCode.days[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Days_Code")!
+        
+       let label = cell.viewWithTag(100) as! UILabel
+        let imageView=cell.viewWithTag(200) as! UIImageView
+        label.text=AppDelegate.daysCode.days[indexPath.row]
+        imageView.image=AppDelegate.daysCode.dayImage[indexPath.row] as! UIImage
+        /*cell.textLabel?.text=AppDelegate.daysCode.days[indexPath.row]*/
+        
 
         // Configure the cell...
 
         return cell
     }
+    
     
 
     /*

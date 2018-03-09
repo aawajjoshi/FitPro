@@ -7,10 +7,16 @@
 //
 
 import Foundation
+import UIKit
 class  DaysModel{
     var days:[String]
+
+    var dayImage:[UIImage]
+    
     init(){
-      days=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
+      days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+    dayImage=[#imageLiteral(resourceName: "Sunday"),#imageLiteral(resourceName: "Monday"),#imageLiteral(resourceName: "Tuesday"),#imageLiteral(resourceName: "Wednesday"),#imageLiteral(resourceName: "Thursday"),#imageLiteral(resourceName: "Friday"),#imageLiteral(resourceName: "Saturday")]
+        
     }
     class func DaysFunc()->DaysModel{
         return DaysModel()
