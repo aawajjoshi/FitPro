@@ -37,15 +37,20 @@ class DaysTableTableViewController: UITableViewController {
         return AppDelegate.daysCode.days.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        
+        
+        // Configure the cell...
+      
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Days_Code", for: indexPath)
+        cell.textLabel?.text=AppDelegate.daysCode.days[indexPath.row]
 
         // Configure the cell...
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

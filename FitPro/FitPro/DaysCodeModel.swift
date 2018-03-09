@@ -12,7 +12,7 @@ class  DaysModel{
     init(){
       days=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
     }
-    class func DaysFunc()->Daysmodel{
+    class func DaysFunc()->DaysModel{
         return DaysModel()
     }
     
