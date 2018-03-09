@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		330D53412053377C00519705 /* DaysTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330D53402053377C00519705 /* DaysTableTableViewController.swift */; };
+		330D5343205338F200519705 /* DaysCodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330D5342205338F200519705 /* DaysCodeModel.swift */; };
 		CDF612F82036666A009C4724 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF612F72036666A009C4724 /* AppDelegate.swift */; };
-		CDF612FA2036666A009C4724 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF612F92036666A009C4724 /* ViewController.swift */; };
 		CDF612FD2036666A009C4724 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDF612FB2036666A009C4724 /* Main.storyboard */; };
 		CDF612FF2036666A009C4724 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDF612FE2036666A009C4724 /* Assets.xcassets */; };
 		CDF613022036666A009C4724 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDF613002036666A009C4724 /* LaunchScreen.storyboard */; };
@@ -16,9 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		330D53402053377C00519705 /* DaysTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysTableTableViewController.swift; sourceTree = "<group>"; };
+		330D5342205338F200519705 /* DaysCodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysCodeModel.swift; sourceTree = "<group>"; };
 		CDF612F42036666A009C4724 /* FitPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDF612F72036666A009C4724 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CDF612F92036666A009C4724 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CDF612FC2036666A009C4724 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDF612FE2036666A009C4724 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDF613012036666A009C4724 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,10 +59,11 @@
 			isa = PBXGroup;
 			children = (
 				CDF612F72036666A009C4724 /* AppDelegate.swift */,
-				CDF612F92036666A009C4724 /* ViewController.swift */,
 				CDF612FB2036666A009C4724 /* Main.storyboard */,
+				330D5342205338F200519705 /* DaysCodeModel.swift */,
 				CDF612FE2036666A009C4724 /* Assets.xcassets */,
 				CDF613002036666A009C4724 /* LaunchScreen.storyboard */,
+				330D53402053377C00519705 /* DaysTableTableViewController.swift */,
 				CDF613032036666A009C4724 /* Info.plist */,
 				CDF6130920366CFA009C4724 /* CustomTableViewCell.swift */,
 			);
@@ -140,7 +143,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDF6130A20366CFA009C4724 /* CustomTableViewCell.swift in Sources */,
-				CDF612FA2036666A009C4724 /* ViewController.swift in Sources */,
+				330D5343205338F200519705 /* DaysCodeModel.swift in Sources */,
+				330D53412053377C00519705 /* DaysTableTableViewController.swift in Sources */,
 				CDF612F82036666A009C4724 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
