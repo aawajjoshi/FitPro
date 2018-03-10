@@ -44,18 +44,24 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vzL-Kr-IVf">
                                             <rect key="frame" x="10" y="5" width="394" height="88"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ojo-0F-V4i">
+                                                <label opaque="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ojo-0F-V4i">
                                                     <rect key="frame" x="196" y="10" width="172" height="68"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="FtT-3V-LR5" appends="YES" id="SbJ-hK-rdi"/>
+                                                    </connections>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="200" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ebu-0m-AGa">
+                                                <imageView clipsSubviews="YES" tag="200" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ebu-0m-AGa">
                                                     <rect key="frame" x="8" y="10" width="111" height="74"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="80" id="7OS-0I-AjR"/>
                                                         <constraint firstAttribute="height" constant="80" id="YI7-NP-vEu"/>
                                                     </constraints>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="FtT-3V-LR5" appends="YES" id="gDr-XW-XN1"/>
+                                                    </connections>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="0.5" colorSpace="calibratedRGB"/>
@@ -67,6 +73,9 @@
                                                 <constraint firstItem="Ojo-0F-V4i" firstAttribute="top" secondItem="vzL-Kr-IVf" secondAttribute="top" constant="3" id="diG-RI-xNw"/>
                                                 <constraint firstItem="ebu-0m-AGa" firstAttribute="centerY" secondItem="vzL-Kr-IVf" secondAttribute="centerY" id="zN6-Rv-zYI"/>
                                             </constraints>
+                                            <connections>
+                                                <outletCollection property="gestureRecognizers" destination="FtT-3V-LR5" appends="YES" id="HmD-ZD-lW9"/>
+                                            </connections>
                                         </view>
                                     </subviews>
                                     <constraints>
@@ -84,11 +93,13 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="lE5-DX-lt0"/>
-                    <connections>
-                        <segue destination="mmM-z3-zdS" kind="show" identifier="secondVC" id="1uH-re-8PX"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xi8-7U-YCr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="FtT-3V-LR5">
+                    <connections>
+                        <segue destination="mmM-z3-zdS" kind="show" id="7NR-m0-Smu"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="389.85507246376812" y="-2.4456521739130435"/>
         </scene>

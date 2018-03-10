@@ -18,6 +18,7 @@ class BodyPartTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,10 +46,10 @@ class BodyPartTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Body_Cell")
         let label = cell?.viewWithTag(100) as! UILabel
         let imageView=cell?.viewWithTag(200) as! UIImageView
-        label.text=AppDelegate.daysCode.days[indexPath.row]
-        imageView.image=AppDelegate.daysCode.dayImage[indexPath.row] as! UIImage
+        label.text=AppDelegate.daysCode.body[indexPath.row]
+        imageView.image=AppDelegate.daysCode.bodyImage[indexPath.row]
 
-        // Configure the cell...
+        // Configure the cell.../
 
         return cell!
     }
