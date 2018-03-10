@@ -180,6 +180,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="ktH-31-I6C" kind="show" id="f0y-7u-SWg"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
