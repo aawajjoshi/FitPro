@@ -33,6 +33,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Days_Code" rowHeight="98" id="49g-cU-gHK">
                                 <rect key="frame" x="0.0" y="28" width="414" height="98"/>
@@ -49,9 +50,6 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
-                                                    <connections>
-                                                        <outletCollection property="gestureRecognizers" destination="FtT-3V-LR5" appends="YES" id="SbJ-hK-rdi"/>
-                                                    </connections>
                                                 </label>
                                                 <imageView clipsSubviews="YES" tag="200" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ebu-0m-AGa">
                                                     <rect key="frame" x="8" y="10" width="111" height="74"/>
@@ -59,10 +57,14 @@
                                                         <constraint firstAttribute="width" constant="80" id="7OS-0I-AjR"/>
                                                         <constraint firstAttribute="height" constant="80" id="YI7-NP-vEu"/>
                                                     </constraints>
-                                                    <connections>
-                                                        <outletCollection property="gestureRecognizers" destination="FtT-3V-LR5" appends="YES" id="gDr-XW-XN1"/>
-                                                    </connections>
                                                 </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KD1-AD-Kj0">
+                                                    <rect key="frame" x="0.0" y="0.0" width="386" height="88"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <segue destination="mmM-z3-zdS" kind="show" id="sY5-vM-ayd"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="0.5" colorSpace="calibratedRGB"/>
                                             <constraints>
@@ -73,9 +75,6 @@
                                                 <constraint firstItem="Ojo-0F-V4i" firstAttribute="top" secondItem="vzL-Kr-IVf" secondAttribute="top" constant="3" id="diG-RI-xNw"/>
                                                 <constraint firstItem="ebu-0m-AGa" firstAttribute="centerY" secondItem="vzL-Kr-IVf" secondAttribute="centerY" id="zN6-Rv-zYI"/>
                                             </constraints>
-                                            <connections>
-                                                <outletCollection property="gestureRecognizers" destination="FtT-3V-LR5" appends="YES" id="HmD-ZD-lW9"/>
-                                            </connections>
                                         </view>
                                     </subviews>
                                     <constraints>
@@ -95,11 +94,6 @@
                     <navigationItem key="navigationItem" id="lE5-DX-lt0"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xi8-7U-YCr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="FtT-3V-LR5">
-                    <connections>
-                        <segue destination="mmM-z3-zdS" kind="show" id="7NR-m0-Smu"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="389.85507246376812" y="-2.4456521739130435"/>
         </scene>
