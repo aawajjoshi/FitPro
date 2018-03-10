@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -160,5 +161,59 @@
             </objects>
             <point key="canvasLocation" x="1118.840579710145" y="-2.4456521739130435"/>
         </scene>
+        <!--Timer View Controller-->
+        <scene sceneID="VPz-no-TAL">
+            <objects>
+                <viewController id="BYh-gw-AUZ" customClass="TimerViewController" customModule="FitPro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0A6-dw-kK7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="60 Seconds " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRR-Z6-rBq">
+                                <rect key="frame" x="128" y="253" width="158" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="0.62168236301369861" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xlh-Zw-oFW">
+                                <rect key="frame" x="51" y="383" width="119" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="START" image="icons8-play-64"/>
+                                <connections>
+                                    <action selector="startBTN:" destination="BYh-gw-AUZ" eventType="touchUpInside" id="xpE-Bm-Zqi"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-timer-96" translatesAutoresizingMaskIntoConstraints="NO" id="mwC-4R-QTc">
+                                <rect key="frame" x="131" y="87" width="152" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWu-uG-dJY">
+                                <rect key="frame" x="249" y="383" width="110" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="STOP" image="icons8-delete-64"/>
+                                <connections>
+                                    <action selector="stopBTN:" destination="BYh-gw-AUZ" eventType="touchUpInside" id="9NF-Kg-2HF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="1ri-lm-Kxa"/>
+                    </view>
+                    <connections>
+                        <outlet property="startOTL" destination="Xlh-Zw-oFW" id="6MW-PB-Xkb"/>
+                        <outlet property="stopOTL" destination="UWu-uG-dJY" id="ZUj-Ui-3QH"/>
+                        <outlet property="timeLBL" destination="HRR-Z6-rBq" id="Lp7-7Z-Oim"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a1U-5g-WIt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1118.840579710145" y="797.28260869565224"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="icons8-delete-64" width="64" height="64"/>
+        <image name="icons8-play-64" width="64" height="64"/>
+        <image name="icons8-timer-96" width="96" height="96"/>
+    </resources>
 </document>
