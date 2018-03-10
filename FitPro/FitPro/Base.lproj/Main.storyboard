@@ -192,6 +192,55 @@
             </objects>
             <point key="canvasLocation" x="2031.8840579710147" y="-2.4456521739130435"/>
         </scene>
+        <!--Timer View Controller-->
+        <scene sceneID="Yky-um-yxB">
+            <objects>
+                <viewController id="ktH-31-I6C" customClass="TimerViewController" customModule="FitPro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NfI-1w-yqW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-timer-96" translatesAutoresizingMaskIntoConstraints="NO" id="qF6-27-c5e">
+                                <rect key="frame" x="124" y="85" width="166" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="60 Seconds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uM9-YF-ext">
+                                <rect key="frame" x="135" y="277" width="145" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jME-hb-MDz">
+                                <rect key="frame" x="44" y="369" width="119" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="START" image="icons8-play-64"/>
+                                <connections>
+                                    <action selector="startBTN:" destination="ktH-31-I6C" eventType="touchUpInside" id="gEE-wk-eGr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDc-kE-lu1">
+                                <rect key="frame" x="258" y="369" width="110" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="STOP" image="icons8-delete-64"/>
+                                <connections>
+                                    <action selector="stopBTN:" destination="ktH-31-I6C" eventType="touchUpInside" id="GXx-eB-H3i"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="3Dt-BC-kM7"/>
+                    </view>
+                    <connections>
+                        <outlet property="startOTL" destination="jME-hb-MDz" id="z9H-6F-hTA"/>
+                        <outlet property="stopOTL" destination="NfI-1w-yqW" id="1xF-d8-jbD"/>
+                        <outlet property="timeLBL" destination="uM9-YF-ext" id="f49-cb-smO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9tr-rO-GaV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2000.0000000000002" y="758.96739130434787"/>
+        </scene>
     </scenes>
     <resources>
         <image name="icons8-delete-64" width="64" height="64"/>

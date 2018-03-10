@@ -10,6 +10,7 @@
 		330D53412053377C00519705 /* DaysTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330D53402053377C00519705 /* DaysTableTableViewController.swift */; };
 		330D5343205338F200519705 /* DaysCodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330D5342205338F200519705 /* DaysCodeModel.swift */; };
 		330D53452053728300519705 /* ExerciseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330D53442053728300519705 /* ExerciseTableViewController.swift */; };
+		CD079CED20537E48002F48F0 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD079CEC20537E48002F48F0 /* TimerViewController.swift */; };
 		CDE80C3D205350880037637C /* BodyPartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE80C3C205350880037637C /* BodyPartTableViewController.swift */; };
 		CDF612F82036666A009C4724 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF612F72036666A009C4724 /* AppDelegate.swift */; };
 		CDF612FD2036666A009C4724 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDF612FB2036666A009C4724 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		330D53402053377C00519705 /* DaysTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysTableTableViewController.swift; sourceTree = "<group>"; };
 		330D5342205338F200519705 /* DaysCodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysCodeModel.swift; sourceTree = "<group>"; };
 		330D53442053728300519705 /* ExerciseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewController.swift; sourceTree = "<group>"; };
+		CD079CEC20537E48002F48F0 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimerViewController.swift; path = ../TimerViewController.swift; sourceTree = "<group>"; };
 		CDE80C3C205350880037637C /* BodyPartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyPartTableViewController.swift; sourceTree = "<group>"; };
 		CDF612F42036666A009C4724 /* FitPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDF612F72036666A009C4724 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				330D53402053377C00519705 /* DaysTableTableViewController.swift */,
 				CDF613032036666A009C4724 /* Info.plist */,
 				CDE80C3C205350880037637C /* BodyPartTableViewController.swift */,
+				CD079CEC20537E48002F48F0 /* TimerViewController.swift */,
 			);
 			path = FitPro;
 			sourceTree = "<group>";
@@ -145,11 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD079CEB205374C7002F48F0 /* TimerViewController.swift in Sources */,
 				CDE80C3D205350880037637C /* BodyPartTableViewController.swift in Sources */,
 				330D53452053728300519705 /* ExerciseTableViewController.swift in Sources */,
 				330D5343205338F200519705 /* DaysCodeModel.swift in Sources */,
 				330D53412053377C00519705 /* DaysTableTableViewController.swift in Sources */,
+				CD079CED20537E48002F48F0 /* TimerViewController.swift in Sources */,
 				CDF612F82036666A009C4724 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
