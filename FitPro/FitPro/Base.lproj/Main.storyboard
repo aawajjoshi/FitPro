@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -192,4 +193,9 @@
             <point key="canvasLocation" x="2031.8840579710147" y="-2.4456521739130435"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icons8-delete-64" width="64" height="64"/>
+        <image name="icons8-play-64" width="64" height="64"/>
+        <image name="icons8-timer-96" width="96" height="96"/>
+    </resources>
 </document>

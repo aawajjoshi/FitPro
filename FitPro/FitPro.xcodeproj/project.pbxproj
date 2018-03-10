@@ -145,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD079CEB205374C7002F48F0 /* TimerViewController.swift in Sources */,
 				CDE80C3D205350880037637C /* BodyPartTableViewController.swift in Sources */,
 				330D53452053728300519705 /* ExerciseTableViewController.swift in Sources */,
 				330D5343205338F200519705 /* DaysCodeModel.swift in Sources */,
