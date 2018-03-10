@@ -1,16 +1,15 @@
 //
-//  BodyPartTableViewController.swift
+//  ExerciseTableViewController.swift
 //  FitPro
 //
-//  Created by Joshi,Aawaj R on 3/9/18.
+//  Created by Vinukonda,Sirisha on 3/9/18.
 //  Copyright © 2018 Joshi,Aawaj R. All rights reserved.
 //
 
 import UIKit
 
-class BodyPartTableViewController: UITableViewController {
-   
-
+class ExerciseTableViewController: UITableViewController {
+ var bodyexercise:bodyExercise!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,7 +18,6 @@ class BodyPartTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,25 +34,18 @@ class BodyPartTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-         return bodyE.exercises.count
+        return bodyexercise.partExercise.count
     }
 
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
-    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Body_Cell")
-        let label = cell?.viewWithTag(100) as! UILabel
-        let imageView=cell?.viewWithTag(200) as! UIImageView
-        label.text=bodyE.exercises[indexPath.row].bodypart
-            //AppDelegate.daysCode.//body[indexPath.row]
-        //AppDelegate.daysCode.bodyImage[indexPath.row]
-        imageView.image=bodyE.exercises[indexPath.row].image
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Exercise_Cell", for: indexPath)
+        cell.textLabel?.text = bodyexercise.partExercise[indexPath.row]
+            
 
-        // Configure the cell.../
+        // Configure the cell...
 
-        return cell!
+        return cell
     }
     
 
@@ -93,19 +84,14 @@ class BodyPartTableViewController: UITableViewController {
     }
     */
 
-    
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        let destination = segue.destination as! ExerciseTableViewController
-        let index = tableView.indexPathForSelectedRow!.row
-        destination.bodyexercise = bodyE.bodypartNum(index)
-        
-        //airline = FAA.airlineNum(index)
     }
-    
+    */
 
 }
