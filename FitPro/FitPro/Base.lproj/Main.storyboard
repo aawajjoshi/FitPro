@@ -230,11 +230,19 @@
                                     <action selector="stopBTN:" destination="ktH-31-I6C" eventType="touchUpInside" id="GXx-eB-H3i"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FeP-vE-Tn6">
+                                <rect key="frame" x="10" y="446" width="394" height="270"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="3Dt-BC-kM7" firstAttribute="trailing" secondItem="FeP-vE-Tn6" secondAttribute="trailing" constant="10" id="DTo-4i-ENI"/>
+                            <constraint firstItem="FeP-vE-Tn6" firstAttribute="leading" secondItem="3Dt-BC-kM7" secondAttribute="leading" constant="10" id="Y6L-hX-FYV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="3Dt-BC-kM7"/>
                     </view>
                     <connections>
+                        <outlet property="exerImage" destination="FeP-vE-Tn6" id="0KS-NY-6z5"/>
                         <outlet property="startOTL" destination="jME-hb-MDz" id="z9H-6F-hTA"/>
                         <outlet property="stopOTL" destination="NfI-1w-yqW" id="1xF-d8-jbD"/>
                         <outlet property="timeLBL" destination="uM9-YF-ext" id="f49-cb-smO"/>
