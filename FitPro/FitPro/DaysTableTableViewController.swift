@@ -59,7 +59,7 @@ class DaysTableTableViewController: UITableViewController {
         /*cell.textLabel?.text=AppDelegate.daysCode.days[indexPath.row]*/
         
 
-        // Configure the cell...
+        cell.layer.cornerRadius = 35
 
         return cell
     }

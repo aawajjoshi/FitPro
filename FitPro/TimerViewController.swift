@@ -22,14 +22,14 @@ class TimerViewController: UIViewController {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(TimerViewController.counter), userInfo: nil, repeats: true)
         
        
-        startOTL.isHidden = true
+        startOTL.isHidden = false
         
     }
     
     @objc func counter()
     {
         seconds -= 1
-        timeLBL.text = String(seconds) + " Seconds"
+        timeLBL.text = String(seconds) + " seconds"
         
         if (seconds == 0)
         {
@@ -43,13 +43,21 @@ class TimerViewController: UIViewController {
     @IBAction func stopBTN(_ sender: Any) {
         
         timer.invalidate()
-        seconds = 30
         
-        timeLBL.text = "30 Seconds"
+        
+        timeLBL.text = String(seconds) + " seconds"
         
         startOTL.isHidden = false
         
     }
+    
+    
+    @IBAction func resetBTN(_ sender: Any) {
+        timer.invalidate()
+        seconds = 60
+        timeLBL.text = String(seconds) + " seconds"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

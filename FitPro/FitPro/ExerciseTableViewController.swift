@@ -37,14 +37,16 @@ class ExerciseTableViewController: UITableViewController {
         return bodyexercise.partExercise.count
     }
 
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Exercise_Cell", for: indexPath)
-        cell.textLabel?.text = bodyexercise.partExercise[indexPath.row]
-            
-
-        // Configure the cell...
-
+        let label = cell.viewWithTag(101) as! UILabel
+        label.text = bodyexercise.partExercise[indexPath.row]
+        cell.layer.cornerRadius = 35
+        
         return cell
     }
     

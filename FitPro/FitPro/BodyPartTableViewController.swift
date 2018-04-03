@@ -52,7 +52,7 @@ class BodyPartTableViewController: UITableViewController {
         //AppDelegate.daysCode.bodyImage[indexPath.row]
         imageView.image=bodyE.exercises[indexPath.row].image
 
-        // Configure the cell.../
+        cell?.layer.cornerRadius = 35
 
         return cell!
     }
