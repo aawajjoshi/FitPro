@@ -211,6 +211,30 @@
             </objects>
             <point key="canvasLocation" x="2031.8840579710147" y="-2.4456521739130435"/>
         </scene>
+        <!--Exercise Images View Controller-->
+        <scene sceneID="1ar-dv-2gN">
+            <objects>
+                <viewController id="5s9-To-Q3F" customClass="ExerciseImagesViewController" customModule="FitPro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dqn-eG-Vtf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="a5G-Mu-8g7">
+                                <rect key="frame" x="44" y="387" width="312" height="192"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="EgR-HT-Bbd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="The-h7-FCs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2989.8550724637685" y="-2.4456521739130435"/>
+        </scene>
         <!--Timer View Controller-->
         <scene sceneID="Yky-um-yxB">
             <objects>
@@ -293,6 +317,7 @@
                         <viewLayoutGuide key="safeArea" id="3Dt-BC-kM7"/>
                     </view>
                     <connections>
+                        <outlet property="exerImage" destination="FeP-vE-Tn6" id="0KS-NY-6z5"/>
                         <outlet property="startOTL" destination="jME-hb-MDz" id="z9H-6F-hTA"/>
                         <outlet property="stopOTL" destination="NfI-1w-yqW" id="1xF-d8-jbD"/>
                         <outlet property="timeLBL" destination="uM9-YF-ext" id="f49-cb-smO"/>

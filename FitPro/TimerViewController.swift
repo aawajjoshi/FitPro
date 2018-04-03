@@ -70,6 +70,7 @@ class TimerViewController: UIViewController {
     }
     
 
-   
+    @IBOutlet weak var exerImage: UIImageView!
+    
 
 }
