@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import AVFoundation
 
 class TimerViewController: UIViewController {
 
-    var seconds = 60
+    var seconds = 10
     var timer = Timer()
+    var audio = AVAudioPlayer()
     
     
     @IBOutlet weak var timeLBL: UILabel!
@@ -34,6 +36,9 @@ class TimerViewController: UIViewController {
         if (seconds == 0)
         {
             timer.invalidate()
+            
+            audio.play()
+            timeLBL.text = "Done!"
         }
     }
     
@@ -49,17 +54,29 @@ class TimerViewController: UIViewController {
         
         startOTL.isHidden = false
         
+        audio.stop()
+        
     }
     
     
     @IBAction func resetBTN(_ sender: Any) {
         timer.invalidate()
-        seconds = 60
+        seconds = 10
         timeLBL.text = String(seconds) + " seconds"
+        audio.stop()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        do{
+            let audioPath = Bundle.main.path(forResource: "analog", ofType: ".mp3")
+            try audio = AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioPath!))
+            
+        }
+        catch{
+            //Error
+        }
 
         // Do any additional setup after loading the view.
     }

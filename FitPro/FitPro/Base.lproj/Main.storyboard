@@ -197,7 +197,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="ktH-31-I6C" kind="show" id="f0y-7u-SWg"/>
+                                    <segue destination="5s9-To-Q3F" kind="show" id="w5t-r2-em0"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -219,17 +219,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="a5G-Mu-8g7">
-                                <rect key="frame" x="44" y="387" width="312" height="192"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YzU-Qr-jkL">
+                                <rect key="frame" x="20" y="20" width="374" height="362"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhk-YK-jfI">
+                                <rect key="frame" x="184" y="665" width="47" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="START"/>
+                                <connections>
+                                    <segue destination="ktH-31-I6C" kind="show" id="39e-Z4-U3B"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEZ-Wc-Cmt">
+                                <rect key="frame" x="20" y="399" width="374" height="246"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="EgR-HT-Bbd"/>
                     </view>
+                    <connections>
+                        <outlet property="Description" destination="LEZ-Wc-Cmt" id="eZ0-lt-eH7"/>
+                        <outlet property="image" destination="YzU-Qr-jkL" id="MQk-ZU-mpv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="The-h7-FCs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -317,7 +333,6 @@
                         <viewLayoutGuide key="safeArea" id="3Dt-BC-kM7"/>
                     </view>
                     <connections>
-                        <outlet property="exerImage" destination="FeP-vE-Tn6" id="0KS-NY-6z5"/>
                         <outlet property="startOTL" destination="jME-hb-MDz" id="z9H-6F-hTA"/>
                         <outlet property="stopOTL" destination="NfI-1w-yqW" id="1xF-d8-jbD"/>
                         <outlet property="timeLBL" destination="uM9-YF-ext" id="f49-cb-smO"/>

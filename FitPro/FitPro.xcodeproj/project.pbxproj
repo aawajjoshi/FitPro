@@ -11,6 +11,7 @@
 		330D5343205338F200519705 /* DaysCodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330D5342205338F200519705 /* DaysCodeModel.swift */; };
 		330D53452053728300519705 /* ExerciseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330D53442053728300519705 /* ExerciseTableViewController.swift */; };
 		CD079CED20537E48002F48F0 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD079CEC20537E48002F48F0 /* TimerViewController.swift */; };
+		CD5B123F20829A6A0057485F /* analog.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD5B123E20829A6A0057485F /* analog.mp3 */; };
 		CDE80C3D205350880037637C /* BodyPartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE80C3C205350880037637C /* BodyPartTableViewController.swift */; };
 		CDF612F82036666A009C4724 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF612F72036666A009C4724 /* AppDelegate.swift */; };
 		CDF612FD2036666A009C4724 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDF612FB2036666A009C4724 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		330D5342205338F200519705 /* DaysCodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysCodeModel.swift; sourceTree = "<group>"; };
 		330D53442053728300519705 /* ExerciseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewController.swift; sourceTree = "<group>"; };
 		CD079CEC20537E48002F48F0 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimerViewController.swift; path = ../TimerViewController.swift; sourceTree = "<group>"; };
+		CD5B123E20829A6A0057485F /* analog.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = analog.mp3; sourceTree = "<group>"; };
 		CDE80C3C205350880037637C /* BodyPartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyPartTableViewController.swift; sourceTree = "<group>"; };
 		CDF612F42036666A009C4724 /* FitPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDF612F72036666A009C4724 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +50,6 @@
 		CDF612EB2036666A009C4724 = {
 			isa = PBXGroup;
 			children = (
-				F286F6492072F3D9004A37E7 /* ExerciseImagesViewController.swift */,
 				CDF612F62036666A009C4724 /* FitPro */,
 				CDF612F52036666A009C4724 /* Products */,
 			);
@@ -74,7 +75,9 @@
 				330D53402053377C00519705 /* DaysTableTableViewController.swift */,
 				CDF613032036666A009C4724 /* Info.plist */,
 				CDE80C3C205350880037637C /* BodyPartTableViewController.swift */,
+				CD5B123E20829A6A0057485F /* analog.mp3 */,
 				CD079CEC20537E48002F48F0 /* TimerViewController.swift */,
+				F286F6492072F3D9004A37E7 /* ExerciseImagesViewController.swift */,
 			);
 			path = FitPro;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			files = (
 				CDF613022036666A009C4724 /* LaunchScreen.storyboard in Resources */,
 				CDF612FF2036666A009C4724 /* Assets.xcassets in Resources */,
+				CD5B123F20829A6A0057485F /* analog.mp3 in Resources */,
 				CDF612FD2036666A009C4724 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
