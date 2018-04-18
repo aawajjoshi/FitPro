@@ -14,7 +14,7 @@ class TimerViewController: UIViewController {
     var seconds = 10
     var timer = Timer()
     var audio = AVAudioPlayer()
-    
+    var ex:String?
     
     @IBOutlet weak var timeLBL: UILabel!
     
