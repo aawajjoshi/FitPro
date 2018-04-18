@@ -102,7 +102,7 @@ class ExerciseOnDayTableViewController: UITableViewController {
         if  segue.identifier=="getThat"{
             let destination = segue.destination as! TimerViewController
             let index = tableView.indexPathForSelectedRow!.row
-            //destination.ex = self.data[index]
+            destination.ex = self.data[index]
             
             //        airline = FAA.airlineNum(index)
             

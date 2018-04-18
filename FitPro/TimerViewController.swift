@@ -7,23 +7,38 @@
 //
 
 import UIKit
-import AVFoundation
 
 class TimerViewController: UIViewController {
-
-    var seconds = 10
-    var timer = Timer()
-    var audio = AVAudioPlayer()
-    var ex:String?
     
+    var seconds = 60
+    var timer = Timer()
+    
+    var ex:String?
+    var number:Int?
+    //    let exercises=["Barbell Squat","Dumbbell Rear Lunge","Leg Extensions","Standing Calf Raise","Hack Squats"]
+    
+    @IBOutlet var image: UIImageView!
+    
+    @IBOutlet var exerciseDescription: UILabel!
     @IBOutlet weak var timeLBL: UILabel!
     
     @IBOutlet weak var startOTL: UIButton!
     
+    
+    @IBAction func addToPrograms(_ sender: Any) {
+        self.performSegue(withIdentifier: "programs", sender: exerciseName)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        //        print(number!)
+        //        print(Array(exercises[abc!].keys))
+    }
+    
+    
     @IBAction func startBTN(_ sender: Any) {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(TimerViewController.counter), userInfo: nil, repeats: true)
         
-       
+        
         startOTL.isHidden = false
         
     }
@@ -36,9 +51,6 @@ class TimerViewController: UIViewController {
         if (seconds == 0)
         {
             timer.invalidate()
-            
-            audio.play()
-            timeLBL.text = "Done!"
         }
     }
     
@@ -54,40 +66,41 @@ class TimerViewController: UIViewController {
         
         startOTL.isHidden = false
         
-        audio.stop()
-        
     }
     
     
     @IBAction func resetBTN(_ sender: Any) {
         timer.invalidate()
-        seconds = 10
+        seconds = 60
         timeLBL.text = String(seconds) + " seconds"
-        audio.stop()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        do{
-            let audioPath = Bundle.main.path(forResource: "analog", ofType: ".mp3")
-            try audio = AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioPath!))
-            
+        //        print(ex!)
+        if number != nil{
+            exerciseName=Array(exercises[abc!].keys)[number!]
+            let a=exercises[abc!]
+            if let arr=Array(a.keys) as? [String]{
+                print(arr[number!])
+                self.image.image=UIImage(named:"\(arr[number!]).png")
+                self.exerciseDescription.text=a[arr[number!]]
+            }
+        }else{
+            self.image.image=UIImage(named:"\(ex!).png")
+            self.exerciseDescription.text=nar[ex!]
         }
-        catch{
-            //Error
-        }
-
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     @IBOutlet weak var exerImage: UIImageView!
     
-
+    
 }
+
