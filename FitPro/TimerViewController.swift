@@ -88,7 +88,7 @@ class TimerViewController: UIViewController {
             }
         }else{
             self.image.image=UIImage(named:"\(ex!).png")
-            self.exerciseDescription.text=nar[ex!]
+            //self.exerciseDescription.text=nar[ex!]
         }
         // Do any additional setup after loading the view.
     }
