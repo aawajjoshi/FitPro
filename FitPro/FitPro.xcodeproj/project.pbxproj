@@ -11,6 +11,7 @@
 		330D5343205338F200519705 /* DaysCodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330D5342205338F200519705 /* DaysCodeModel.swift */; };
 		330D53452053728300519705 /* ExerciseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330D53442053728300519705 /* ExerciseTableViewController.swift */; };
 		338EF1B22087A51B006F7A77 /* ExerciseOnDayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338EF1B12087A51B006F7A77 /* ExerciseOnDayTableViewController.swift */; };
+		339D76812087AB7600AFEF12 /* abc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339D76802087AB7600AFEF12 /* abc.swift */; };
 		33C7466920879D0500532E4C /* ExerciseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C7466820879D0500532E4C /* ExerciseModel.swift */; };
 		CD079CED20537E48002F48F0 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD079CEC20537E48002F48F0 /* TimerViewController.swift */; };
 		CD5B123F20829A6A0057485F /* analog.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD5B123E20829A6A0057485F /* analog.mp3 */; };
@@ -27,6 +28,7 @@
 		330D5342205338F200519705 /* DaysCodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysCodeModel.swift; sourceTree = "<group>"; };
 		330D53442053728300519705 /* ExerciseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewController.swift; sourceTree = "<group>"; };
 		338EF1B12087A51B006F7A77 /* ExerciseOnDayTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseOnDayTableViewController.swift; sourceTree = "<group>"; };
+		339D76802087AB7600AFEF12 /* abc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = abc.swift; sourceTree = "<group>"; };
 		33C7466820879D0500532E4C /* ExerciseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseModel.swift; sourceTree = "<group>"; };
 		CD079CEC20537E48002F48F0 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimerViewController.swift; path = ../TimerViewController.swift; sourceTree = "<group>"; };
 		CD5B123E20829A6A0057485F /* analog.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = analog.mp3; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				CDF612F72036666A009C4724 /* AppDelegate.swift */,
 				CDF612FB2036666A009C4724 /* Main.storyboard */,
 				338EF1B12087A51B006F7A77 /* ExerciseOnDayTableViewController.swift */,
+				339D76802087AB7600AFEF12 /* abc.swift */,
 				330D53442053728300519705 /* ExerciseTableViewController.swift */,
 				330D5342205338F200519705 /* DaysCodeModel.swift */,
 				CDF612FE2036666A009C4724 /* Assets.xcassets */,
@@ -167,6 +170,7 @@
 				330D5343205338F200519705 /* DaysCodeModel.swift in Sources */,
 				330D53412053377C00519705 /* DaysTableTableViewController.swift in Sources */,
 				CD079CED20537E48002F48F0 /* TimerViewController.swift in Sources */,
+				339D76812087AB7600AFEF12 /* abc.swift in Sources */,
 				CDF612F82036666A009C4724 /* AppDelegate.swift in Sources */,
 				F286F64A2072F3D9004A37E7 /* ExerciseImagesViewController.swift in Sources */,
 				33C7466920879D0500532E4C /* ExerciseModel.swift in Sources */,
