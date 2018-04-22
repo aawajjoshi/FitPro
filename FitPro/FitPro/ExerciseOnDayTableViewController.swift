@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+
+
 class ExerciseOnDayTableViewController: UITableViewController {
     //    var dayNumber2:Int?
     

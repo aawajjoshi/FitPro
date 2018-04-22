@@ -77,3 +77,4 @@ let nar=["Bicep curl":
     "Sit up straight, and slowly tilt your head toward your right shoulder until you feel a stretch. Hold this position, and slowly extend your left arm down and to the side. You should feel a stretch on the left side of your neck. Release, and then repeat on the other side. Perform two to five repetitions per side. This stretch will warm up your neck and traps and prepare you for arm exercises."
     
 ]
+

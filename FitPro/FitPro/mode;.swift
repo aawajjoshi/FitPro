@@ -93,3 +93,8 @@ var abc:Int?
 var exerciseName:String?
 
 let exercises:[[String:String]]=[legs,arms,chest,back,cardio,yoga]
+
+
+
+
+
