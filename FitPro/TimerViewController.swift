@@ -43,6 +43,9 @@ class TimerViewController: UIViewController {
         
     }
     
+    @IBAction func startaction(_ sender: Any) {
+        
+    }
     @objc func counter()
     {
         seconds -= 1
