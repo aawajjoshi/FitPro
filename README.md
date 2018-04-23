@@ -16,6 +16,21 @@ Xcode
 
 All functions currently in the app are 100% functional.
 
+## Instructions
+
+- Run the app
+- Tap the 'Body Parts' button on the top right hand side of the screen 
+- Select the body part and the exercise that you want to view
+- Read the description provided and if happy, tap 'Add to Program' button on the bottom of the screen 
+- This will take you back to the day selection screen
+- Repeat until you have a workout routine that you are happy with
+- If you tap on a day, it will show you the list of exercises that you added to that day 
+- Swipe left if you want to delete a particular exercise from the routine
+- Tap on the exercise and read the instructions
+- Tap on the 'Start' button on the bottom of the screen to bring up the timer 
+- Excersie till you are sore
+
+
 ## Authors
 
 **Aawaj Raj Joshi**, **Sirisha Vinukonda**, **Tosh Newton**, **Naresh Vunman**
