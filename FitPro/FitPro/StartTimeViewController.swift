@@ -77,6 +77,7 @@ class StartTimeViewController: UIViewController {
     @IBAction func reset(_ sender: AnyObject) {
         timer.invalidate()
         seconds = 30
+        sliderOutlet.setValue(Float(seconds), animated: true)
         label.text = String(seconds) + " seconds"
         
         sliderOutlet.isHidden = false
