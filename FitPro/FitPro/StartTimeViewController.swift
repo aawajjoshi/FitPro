@@ -7,69 +7,118 @@
 //
 
 import UIKit
+import AVFoundation
 
 class StartTimeViewController: UIViewController {
-    var seconds = 60
-    var timer = Timer()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    var seconds = 30
+    var timer = Timer()
+    var audioPlayer = AVAudioPlayer()
+    
+    
+    @IBOutlet weak var label: UILabel!
+    
+    @IBOutlet weak var sliderOutlet: UISlider!
+    
+    @IBAction func slider(_ sender: UISlider) {
+        seconds = Int(sender.value)
+        label.text = String(seconds) + " Seconds"
+        
     }
-    @IBAction func startBTN(_ sender: Any) {
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(TimerViewController.counter), userInfo: nil, repeats: true)
+    
+    
+    @IBOutlet weak var startOutlet: UIButton!
+    
+    @IBAction func start(_ sender: AnyObject) {
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(StartTimeViewController.counter), userInfo: nil, repeats: true)
         
+        sliderOutlet.isHidden = true
+        startOutlet.isHidden = true
         
-        startOTL.isHidden = false
-        
+        if seconds == 0{
+            label.text = "Done"
+        }
+
     }
     
     @objc func counter()
     {
         seconds -= 1
-        timeLBL.text = String(seconds) + " seconds"
+        label.text = String(seconds) + " Seconds"
         
         if (seconds == 0)
         {
             timer.invalidate()
+            audioPlayer.play()
         }
     }
     
-    @IBOutlet var stopOTL: UIView!
     
-    
-    @IBAction func stopBTN(_ sender: Any) {
-        
+    @IBAction func stop(_ sender: AnyObject) {
         timer.invalidate()
+
+        sliderOutlet.setValue(Float(seconds), animated: true)
+        label.text = "\(seconds) Seconds"
         
+        audioPlayer.stop()
         
-        timeLBL.text = String(seconds) + " seconds"
+        sliderOutlet.isHidden = false
+        startOutlet.isHidden = false
         
-        startOTL.isHidden = false
+        if seconds == 0{
+            label.text = "Done"
+        }
+
+    }
+    
+    @IBOutlet weak var stopOutlet: UIButton!
+    
+    
+    @IBAction func reset(_ sender: AnyObject) {
+        timer.invalidate()
+        seconds = 30
+        label.text = String(seconds) + " seconds"
         
+        sliderOutlet.isHidden = false
+        startOutlet.isHidden = false
+        
+        if seconds == 0{
+            label.text = "Done"
+        }
+
     }
     
     
-    @IBAction func resetBTN(_ sender: Any) {
-        timer.invalidate()
-        seconds = 60
-        timeLBL.text = String(seconds) + " seconds"
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        do
+        {
+            let audioPath = Bundle.main.path(forResource: "analog", ofType: ".mp3")
+            try audioPlayer = AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioPath!))
+        }
+        catch
+        {
+            //ERROR
+        }
+        
+        if seconds == 0{
+            label.text = "Done"
+        }
+
+        
     }
+   
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
+    
+    
+    
 }
