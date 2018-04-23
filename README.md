@@ -12,10 +12,9 @@ Once everything is set, the next time Bob goes to the gym, all he has to do is l
 
 Xcode
 
-## Notes
+## Completion Status
 
-* At the moment we have several different projects created by four of the main collaborators. These projects, in time, will be merged into one to create a fully functioning app.  
-
+All functions currently in the app are 100% functional.
 
 ## Authors
 
