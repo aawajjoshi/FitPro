@@ -48,6 +48,8 @@ class StartTimeViewController: UIViewController {
             timer.invalidate()
             audioPlayer.play()
             label.text = "Done"
+            sliderOutlet.isHidden = false
+            startOutlet.isHidden = false
         }
     }
     
@@ -63,7 +65,10 @@ class StartTimeViewController: UIViewController {
         sliderOutlet.isHidden = false
         startOutlet.isHidden = false
         
-     
+        if seconds == 0 {
+            sliderOutlet.setValue(Float(seconds), animated: true)
+            label.text = "Done"
+        }
 
     }
     
