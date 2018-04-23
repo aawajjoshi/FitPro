@@ -13,6 +13,7 @@
 		338EF1B22087A51B006F7A77 /* ExerciseOnDayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338EF1B12087A51B006F7A77 /* ExerciseOnDayTableViewController.swift */; };
 		339D76812087AB7600AFEF12 /* abc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339D76802087AB7600AFEF12 /* abc.swift */; };
 		33A35C80208D603F00E3020A /* NewTimerControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A35C7F208D603F00E3020A /* NewTimerControllerViewController.swift */; };
+		33A35C82208D676300E3020A /* StartTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A35C81208D676300E3020A /* StartTimeViewController.swift */; };
 		33C7466920879D0500532E4C /* mode;.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C7466820879D0500532E4C /* mode;.swift */; };
 		CD079CED20537E48002F48F0 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD079CEC20537E48002F48F0 /* TimerViewController.swift */; };
 		CD5B123F20829A6A0057485F /* analog.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD5B123E20829A6A0057485F /* analog.mp3 */; };
@@ -31,6 +32,7 @@
 		338EF1B12087A51B006F7A77 /* ExerciseOnDayTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseOnDayTableViewController.swift; sourceTree = "<group>"; };
 		339D76802087AB7600AFEF12 /* abc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = abc.swift; sourceTree = "<group>"; };
 		33A35C7F208D603F00E3020A /* NewTimerControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTimerControllerViewController.swift; sourceTree = "<group>"; };
+		33A35C81208D676300E3020A /* StartTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTimeViewController.swift; sourceTree = "<group>"; };
 		33C7466820879D0500532E4C /* mode;.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "mode;.swift"; sourceTree = "<group>"; };
 		CD079CEC20537E48002F48F0 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimerViewController.swift; path = ../TimerViewController.swift; sourceTree = "<group>"; };
 		CD5B123E20829A6A0057485F /* analog.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = analog.mp3; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			children = (
 				CDF612F72036666A009C4724 /* AppDelegate.swift */,
 				CDF612FB2036666A009C4724 /* Main.storyboard */,
+				33A35C81208D676300E3020A /* StartTimeViewController.swift */,
 				33A35C7F208D603F00E3020A /* NewTimerControllerViewController.swift */,
 				338EF1B12087A51B006F7A77 /* ExerciseOnDayTableViewController.swift */,
 				339D76802087AB7600AFEF12 /* abc.swift */,
@@ -175,6 +178,7 @@
 				330D53412053377C00519705 /* DaysTableTableViewController.swift in Sources */,
 				CD079CED20537E48002F48F0 /* TimerViewController.swift in Sources */,
 				339D76812087AB7600AFEF12 /* abc.swift in Sources */,
+				33A35C82208D676300E3020A /* StartTimeViewController.swift in Sources */,
 				CDF612F82036666A009C4724 /* AppDelegate.swift in Sources */,
 				F286F64A2072F3D9004A37E7 /* ExerciseImagesViewController.swift in Sources */,
 				33C7466920879D0500532E4C /* mode;.swift in Sources */,

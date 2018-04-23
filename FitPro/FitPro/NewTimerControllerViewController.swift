@@ -46,4 +46,6 @@ class NewTimerControllerViewController: UIViewController {
     }
     */
 
+    @IBAction func StartAction(_ sender: Any) {
+    }
 }
