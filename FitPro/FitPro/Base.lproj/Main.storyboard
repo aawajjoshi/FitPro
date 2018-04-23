@@ -312,23 +312,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IM5-S2-Bue">
-                                <rect key="frame" x="10" y="118" width="394" height="415"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IM5-S2-Bue">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-stopwatch-96" translatesAutoresizingMaskIntoConstraints="NO" id="iXc-LQ-yKj">
-                                        <rect key="frame" x="142" y="11" width="111" height="109"/>
+                                        <rect key="frame" x="152" y="203" width="111" height="109"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30 seconds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clh-wP-Cfm">
-                                        <rect key="frame" x="125" y="130" width="145" height="40"/>
+                                        <rect key="frame" x="135" y="322" width="145" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SM5-pn-rBf">
-                                        <rect key="frame" x="43" y="244" width="124" height="80"/>
+                                        <rect key="frame" x="53" y="436" width="124" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" image="icons8-play-button-circled-64">
@@ -339,7 +338,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KL4-C5-4Hf">
-                                        <rect key="frame" x="236" y="250" width="115" height="68"/>
+                                        <rect key="frame" x="246" y="442" width="115" height="68"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" image="icons8-delete-64 (1)">
@@ -350,7 +349,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OVN-zN-gtc">
-                                        <rect key="frame" x="141" y="254" width="118" height="64"/>
+                                        <rect key="frame" x="151" y="446" width="118" height="64"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="icons8-restart-64"/>
                                         <connections>
@@ -358,7 +357,7 @@
                                         </connections>
                                     </button>
                                     <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="33" minValue="5" maxValue="60" translatesAutoresizingMaskIntoConstraints="NO" id="gWQ-7i-Wwq">
-                                        <rect key="frame" x="74" y="186" width="246" height="31"/>
+                                        <rect key="frame" x="84" y="378" width="246" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
@@ -370,6 +369,12 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="IM5-S2-Bue" secondAttribute="trailing" id="oAo-fj-5B4"/>
+                            <constraint firstItem="IM5-S2-Bue" firstAttribute="bottom" secondItem="pFG-OV-EAG" secondAttribute="bottom" id="oKX-ZV-hLB"/>
+                            <constraint firstItem="IM5-S2-Bue" firstAttribute="top" secondItem="42H-ab-mer" secondAttribute="top" id="rfp-dI-ZoB"/>
+                            <constraint firstItem="IM5-S2-Bue" firstAttribute="leading" secondItem="42H-ab-mer" secondAttribute="leading" id="vJI-f4-geF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="pFG-OV-EAG"/>
                     </view>
                     <connections>
