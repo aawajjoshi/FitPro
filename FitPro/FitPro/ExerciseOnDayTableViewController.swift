@@ -102,7 +102,7 @@ class ExerciseOnDayTableViewController: UITableViewController {
         //        // Pass the selected object to the new view controller.
         
         if  segue.identifier=="getThat"{
-            let destination = segue.destination as! TimerViewController
+            let destination = segue.destination as! NewTimerControllerViewController
             let index = tableView.indexPathForSelectedRow!.row
             destination.ex = self.data[index]
             

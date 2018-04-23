@@ -263,6 +263,38 @@
             </objects>
             <point key="canvasLocation" x="2989.8550724637685" y="-2.4456521739130435"/>
         </scene>
+        <!--New Timer Controller View Controller-->
+        <scene sceneID="e0M-Kh-MH7">
+            <objects>
+                <viewController id="V8k-aA-wM3" customClass="NewTimerControllerViewController" customModule="FitPro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0ec-La-a0O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BuN-va-cGM">
+                                <rect key="frame" x="10" y="60" width="394" height="205"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GlB-Do-tal">
+                                <rect key="frame" x="10" y="273" width="394" height="380"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="tYD-T9-7ng"/>
+                    </view>
+                    <connections>
+                        <outlet property="exerciseDescription" destination="GlB-Do-tal" id="kDQ-gK-wSY"/>
+                        <outlet property="image" destination="BuN-va-cGM" id="aQU-4N-VBL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rhX-DC-9FB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4907.2463768115949" y="-2.4456521739130435"/>
+        </scene>
         <!--Exercise On Day Table View Controller-->
         <scene sceneID="bq9-gI-mB9">
             <objects>
@@ -308,7 +340,7 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <segue destination="qAU-u9-w2t" kind="show" identifier="getThat" id="py4-jk-Xua"/>
+                        <segue destination="V8k-aA-wM3" kind="show" identifier="getThat" id="FGj-cY-raa"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yye-cm-Cz9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -436,8 +468,6 @@
         <image name="icons8-stopwatch-96" width="96" height="96"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="2A6-Lo-taa"/>
-        <segue reference="py4-jk-Xua"/>
         <segue reference="U9C-ia-BTW"/>
     </inferredMetricsTieBreakers>
 </document>
